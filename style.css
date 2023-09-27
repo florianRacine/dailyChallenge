@@ -1,0 +1,133 @@
+
+/* Réinitialisation des marges et des rembourrages */
+body, h1, p, button {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style pour le fond du corps de la page */
+body {
+    background-color: #121212; /* Couleur de fond sombre */
+    font-family: Arial, sans-serif; /* Police de caractères */
+    color: #fff; /* Couleur du texte */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Style pour la boîte centrale */
+.container {
+    text-align: center;
+    background-color: #333; /* Couleur de fond de la boîte */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Ombre légère */
+}
+
+/* Style pour le titre de l'objectif */
+.objectif-title {
+    position: relative;
+    bottom: 25px;
+    font-size: 24px;
+    padding: 0px;
+}
+
+/* Style pour la boîte de l'objectif */
+.objectif-box {
+    background-color: #444; /* Couleur de fond de la boîte de l'objectif */
+    padding: 20px;
+    padding-bottom: 60px;
+    border-radius: 8px;
+    margin-top: 0px;
+}
+
+/* Style pour le texte de l'objectif */
+.objectif-text {
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Style pour le contenu de l'objectif */
+.objectif-content {
+    font-size: 18px;
+}
+
+/* Style pour le bouton de validation */
+.valider-button {
+    position: relative;
+    background-color: #007BFF; /* Couleur de fond du bouton */
+    color: #fff; /* Couleur du texte du bouton */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    bottom: -40px;
+}
+
+/* Style pour le bouton de validation au survol */
+.valider-button:hover {
+    background-color: #0056b3; /* Couleur de fond du bouton au survol */
+}
+
+.title {
+    position: absolute;
+    top: 0;
+    font-size: 3vh;
+    font-weight: bold;
+    background: #333;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding-bottom: 5vh;
+    padding-top: 5vh;
+}
+
+.currentStreak {
+    position: absolute;
+    left: 10px;
+    bottom: 40px;
+    font-size: 6vh;
+    font-weight: bold;
+    width: 5vh;
+    white-space:nowrap;
+}
+
+.currentStreak img {
+    position: relative;
+    width: 100%;
+    top: 0.3vh;
+}
+
+.logoValidation {
+    position: relative;
+    left: 100%; 
+    width: 30px;
+    height: 30px;
+}
+
+.logoValidation img {
+    width: 100%;
+}
+
+.arrow {
+    position: relative;
+    height: 8vh;
+    width: 5vh;
+}
+
+.rightArrow {
+    top: 50px;
+    left: 248px;
+}
+
+.leftArrow {
+    top: 0px;
+    left: -43px;
+}
+
+.arrow img {
+    width: 100%;
+}
