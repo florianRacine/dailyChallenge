@@ -135,6 +135,23 @@ function updateStreak() {
     currentStreakDiv.appendChild(currentStreakImg);
 }
 
+// Fonction pour déclencher la mise à jour du CSV côté serveur (sans sécurité)
+function requestPushCsv() {
+    fetch('/api/push-csv', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+    })
+        .then(response => response.text())
+        .then(data => {
+            console.log(data); // Affiche la réponse du serveur
+        })
+        .catch(error => {
+            console.error('Erreur lors de la demande de mise à jour :', error);
+        });
+}
+
 
 initializeDate();
 let currentDate = date;
